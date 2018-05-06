@@ -76,6 +76,57 @@ public class POOFigurasGeometricas {
                 System.out.println("El Area del Rectangulo es: " + rectangulo.getArea());
                 System.out.println("El Perimetro del Rectangulo es: " + rectangulo.getPerimetro());
                 break;
+            case 4:
+                /* Se instancia un objeto de la Clase Romboide y a la vez se inicilaizan los valores
+                   de sus propiedades "Base" y "Altura" a través del método Constructor (Romboide). */
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Romboide                          |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor de la Base: ");
+                double baser = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor de la Altura: ");
+                double alturar = entradaTeclado.nextDouble();
+                Romboide romboide = new Romboide(baser, alturar);
+                System.out.println("El Area del Romboide es: " + romboide.getArea());
+                System.out.println("El Perimetro del Romboide es: " + romboide.getPerimetro());
+                break;
+            case 5:
+                /* Se instancia un objeto de la Clase Trapecio y a la vez se inicilaizan los valores
+                   de sus propiedades "Base" y "Altura" a través del método Constructor (Trapecio). */
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Trapecio                          |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor de la Base Mayor: ");
+                double basemayor = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor de la Base Menor: ");
+                double basemenor = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor de la Altura: ");
+                double alturat = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del lado: ");
+                double Lado = entradaTeclado.nextDouble();
+                Trapecio trapecio = new Trapecio(basemayor, basemenor, alturat);
+                System.out.println("El Area del Trapecio es: " + trapecio.getArea());
+                System.out.println("El Perimetro del Trapecio es: " + trapecio.getPerimetro());
+                break;
+            case 6:
+                /* Se instancia un objeto de la Clase Triangulo y a la vez se inicilaizan los valores
+                   de sus propiedades "Base" y "Altura" a través del método Constructor (Triangulo). */
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Triangulo                          |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor de la Base: ");
+                double baset = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor de la Altura: ");
+                double alturatr = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del Lado: ");
+                double Lado1 = entradaTeclado.nextDouble();
+                Triangulo triangulo = new Triangulo(baset, alturatr);
+                System.out.println("El Area del Triangulo es: " + triangulo.getArea());
+                System.out.println("El Perimetro del Triangulo es: " + triangulo.getPerimetro());
+                break;
             default:
                 System.out.println("Salio del programa");
         }
