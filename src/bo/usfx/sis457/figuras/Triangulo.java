@@ -15,10 +15,13 @@ public class Triangulo {
      * Método constructor, crea el Triangulo con las propiedades Base y Altura
      * @param baset Valor tipo double
      * @param alturatr Valor tipo double
+     * @param lado1 Valor tipo double
      */
-    public Triangulo(double baset, double alturatr) {
+    public Triangulo(double baset, double alturatr, double lado1) {
         this.BaseT = baset;
         this.AlturaTR = alturatr;
+        this.Lado1 = lado1;
+        
         
     }
  /**
@@ -26,7 +29,7 @@ public class Triangulo {
      */
     public Triangulo() {
         // Llama al método constructor anterior
-        this(0, 0);
+        this(0, 0, 0);
     }
     /**
      * Método que retorna el valor de la Base 
@@ -56,6 +59,20 @@ public class Triangulo {
      */
     public void setAlturaTR(double alturatr) {
         this.AlturaTR = alturatr;
+    }
+    /**
+     * Método que retorna el valor de la Lado1
+     * @return Retorna el valor de la Altura en tipo double
+     */
+    public double getLado1() {
+        return Lado1;
+    }
+    /**
+     * Método que modifica el valor de la Lado1
+     * @param lado1 Valor de tipo double
+     */
+    public void setLado1(double lado1) {
+        this.Lado1 = lado1;
     }
     /**
      * Método que retorna el area del Triangulo

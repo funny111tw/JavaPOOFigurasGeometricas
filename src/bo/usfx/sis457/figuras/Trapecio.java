@@ -18,18 +18,20 @@ public class Trapecio {
      * @param basemayor Valor tipo double
      * @param basemenor Valor tipo double
      * @param alturat Valor tipo double
+     * @param lado Valor tipo double
      */
-    public Trapecio(double basemayor, double basemenor, double alturat) {
+    public Trapecio(double basemayor, double basemenor, double alturat, double lado) {
         this.BaseMayor = basemayor;
         this.BaseMenor = basemenor;
         this.AlturaT = alturat;
+        this.lado = lado;
     }
       /**
      * Método constructor, crea el Trapecio con valores por defecto
      */
     public Trapecio() {
         // Llama al método constructor anterior
-        this(0, 0, 0);
+        this(0, 0, 0, 0);
     }
       /**
      * Método que retorna el valor de la BaseMayor 
@@ -74,6 +76,20 @@ public class Trapecio {
      */
     public void setAlturaT(double alturat) {
         this.AlturaT = alturat;
+    }
+        /**
+     * Método que retorna el valor de la lado 
+     * @return Retorna el valor de la Altura en tipo double
+     */
+    public double getLado() {
+        return lado;
+    }
+        /**
+     * Método que modifica el valor de la lado
+     * @param lado Valor de tipo double
+     */
+    public void setLado(double lado) {
+        this.lado = lado;
     }
       /**
      * Método que retorna el area del Trapecio

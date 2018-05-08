@@ -108,8 +108,8 @@ public class POOFigurasGeometricas {
                 System.out.print("Introduzca el valor de la Altura: ");
                 double alturat = entradaTeclado.nextDouble();
                 System.out.print("Introduzca el valor del lado: ");
-                double Lado = entradaTeclado.nextDouble();
-                Trapecio trapecio = new Trapecio(basemayor, basemenor, alturat);
+                double lado = entradaTeclado.nextDouble();
+                Trapecio trapecio = new Trapecio(basemayor, basemenor, alturat, lado);
                 System.out.println("El Area del Trapecio es: " + trapecio.getArea());
                 System.out.println("El Perimetro del Trapecio es: " + trapecio.getPerimetro());
                 break;
@@ -125,10 +125,10 @@ public class POOFigurasGeometricas {
                 System.out.print("Introduzca el valor de la Altura: ");
                 double alturatr = entradaTeclado.nextDouble();
                 System.out.print("Introduzca el valor del Lado: ");
-                double Lado1 = entradaTeclado.nextDouble();
-                Triangulo triangulo = new Triangulo(baset, alturatr);
+                double lado1 = entradaTeclado.nextDouble();
+                Triangulo triangulo = new Triangulo(baset, alturatr, lado1);
                 System.out.println("El Area del Triangulo es: " + triangulo.getArea());
-                System.out.println("El Perimetro del Triangulo es: " + triangulo.getPerimetro());
+                System.out.println("El Perimetro del Triangulo isosceles: " + triangulo.getPerimetro());
                 break;
             default:
                 System.out.println("Salio del programa");
