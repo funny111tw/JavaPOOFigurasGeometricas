@@ -1,5 +1,5 @@
 /*
-* Archivo que contiene la Clase Rectangulo 
+* Archivo que contiene la Clase Romboide 
  */
 package bo.usfx.sis457.figuras;
 

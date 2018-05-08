@@ -29,6 +29,9 @@ public class POOFigurasGeometricas {
         System.out.println("| 1) Calcular el area y perimetro de un Circulo    |");
         System.out.println("| 2) Calcular el area y perimetro de un Cuadrado   |");
         System.out.println("| 3) Calcular el area y perimetro de un Rectangulo |");
+        System.out.println("| 4) Calcular el area y perimetro de un Romboide   |");
+        System.out.println("| 5) Calcular el area y perimetro de un Trapecio   |");
+        System.out.println("| 6) Calcular el area y perimetro de un Triangulo  |");
         System.out.println("| *) Salir                                         |");
         System.out.println("+==================================================+");
         entradaTeclado = new Scanner(System.in);
